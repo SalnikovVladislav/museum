@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Новости</title>
+	<link rel="stylesheet" href="newscss.css">
+	<script type="text/javascript">
+		if (screen.width <= 1390) {
+		window.location = "mnews.html";
+		}
+	</script>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+ 
+		$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+		$('.scrollup').fadeIn();
+		} else {
+		$('.scrollup').fadeOut();
+		}
+		});
+ 
+		$('.scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+		});
+ 
+		});
+	</script>
+	
+</head>
+<body>
+	<header>
+		
+		<a href="news.html">
+		<div class="news">
+			<p>Новости</p>
+		</div>
+		</a>
+		<div class="logo">
+			<a href="index.html">
+				<img src="pictures\logo2.png" alt="">
+			</a>
+		</div>
+		<a href="contacts.html">
+		<div class="contacts">
+			<p>Контакты</p>
+		</div>
+		</a>
+	</header>
+	<hr>
+	<main>
+		<p class="views">
+			Последние новости:
+		</p>
+		<a id="first"></a>
+		<div class="container_news">
+			<div class="info_text">
+				<div class="name_date">
+					<div class="name">
+						<p>«Из глубины седых веков»</p>
+					</div>
+					<div class="date">
+						<p>Дата начала:    04.10.21</p>
+						<br>
+						<p>Дата окончания:    17.10.21</p>
+					</div>
+				</div>
+				<div class="info_info">
+					<p>На выставке представлены произведения ведущих современных живописцев — Евгения Захарова, Олега Модорова, Владимира Хамкова, Дмитрия Холина и графика Александра Егорова, талантливых продолжателей владимирской пейзажной школы живописи, которая стала особым явлением в отечественном изобразительном искусстве.</p>
+				</div>
+			</div>
+			<div class="info_img">
+				<img src="pictures\3slid.png" alt="">
+			</div>
+			<div class="time">
+				<p>07.08.21</p>
+			</div>
+		</div>
+		<div class="tipahr">
+			<img src="pictures\line.png" alt="">
+		</div>
+		<a id="second"></a>
+		<div class="container_news">
+			<div class="info_text">
+				<div class="name_date">
+					<div class="name">
+						<p>«Большой Каменный мост»</p>
+					</div>
+					<div class="date">
+						<p>Дата начала:    19.10.21</p>
+						<br>
+						<p>Дата окончания:    03.11.21</p>
+					</div>
+				</div>
+				<div class="info_info">
+					<p>Во дворе Музея откроется выставка рисунков и гравюр из нашего собрания, посвященная истории Большого Каменного моста. Мост «почитался одною из столичных диковинок наравне с колокольней Ивана Великого, Царь-Колоколом, Царь-Пушкою». В наши дни без него невозможно представить один из самых популярных открыточных видов на Кремль, храм Христа Спасителя, Берсеневскую, Пречистенскую и Софийскую набережные.</p>
+				</div>
+			</div>
+			<div class="info_img">
+				<img src="pictures\2slid.png" alt="">
+			</div>
+			<div class="time">
+				<p>15.09.21</p>
+			</div>
+		</div>
+		<div class="tipahr">
+			<img src="pictures\line.png" alt="">
+		</div>
+		<a id="third"></a>
+		<div class="container_news">
+			<div class="info_text">
+				<div class="name_date">
+					<div class="name">
+						<p>«От Пушкина до Чехова»</p>
+					</div>
+					<div class="date">
+						<p>Дата начала:    05.11.21</p>
+						<br>
+						<p>Дата окончания:    18.11.21</p>
+					</div>
+				</div>
+				<div class="info_info">
+					<p>Экспозиция посвящена великим писателям-драматургам. Это прекрасная возможность познакомиться с бессмертными творениями русских писателей-классиков. На выставке представлены драматические произведения великих русских писателей: А.С. Пушкина, А.Н. Островского, Н.В. Гоголя, Л.Н. Толстого, А.П. Чехова, а также издания, рассказывающие об истории создания пьес и театральных деятелях.</p>
+				</div>
+			</div>
+			<div class="info_img">
+				<img src="pictures\1slid.png" alt="">
+			</div>
+			<div class="time">
+				<p>10.10.21</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer_color">
+		<div class="footer_elem">
+			<div class="soc_web">
+				<img src="pictures\vk1.png" class="vk" alt="">
+				<img src="pictures\inst.png" class="inst" alt="">
+			</div>
+			<div class="info">
+				<p>
+					Наш музей работает круглосуточно. <br>
+					По адресу: <br>
+					г. Крутой, ул. Безымянная, <br>
+					дом 2. <br>
+				</p>
+			</div>
+			<div class="number_mail">
+				<div class="number">
+					<img src="pictures\phone.png" alt="">
+					<p>7-(999)-666-33-33</p>
+				</div>
+				<div class="mail">
+					<img src="pictures\mail.png" alt="">
+					<p>writehere@muse.um</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</footer>
+	
+	<a href="#" class="scrollup">Наверх</a>
+</body>
+</html>

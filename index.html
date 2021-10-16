@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Museum</title>
+	<link rel="stylesheet" href="indexcss.css">
+	<script type="text/javascript">
+		if (screen.width <= 1380) {
+		window.location = "mindex.html";
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<a href="news.html">
+		<div class="news">
+			<p>Новости</p>
+		</div>
+		</a>
+		<div class="logo">
+			<a href="index.html">
+				<img src="pictures\logo2.png" alt="">
+			</a>
+		</div>
+		<a href="contacts.html">
+		<div class="contacts">
+			<p>Контакты</p>
+		</div>
+		</a>
+	</header>
+	<hr>
+	<main>
+		<p class="views">
+			Наши выставки:
+		</p>
+		<div class="slider_container">
+			<div class="slider">
+				<div class="slider_item" style="display: block;">
+					<a href="news.html#first"><img src="pictures\3slid.png" alt=""></a>
+				</div>
+
+				<div class="slider_item" style="display: none;">
+					<a href="news.html#second"><img src="pictures\2slid.png" alt=""></a>
+					<div class="slide_text">
+						<p>
+							Через 5 <br>
+							дней!
+						</p>
+					</div>
+				</div>
+
+				<div class="slider_item" style="display: none;">
+					<a href="news.html#third"><img src="pictures\1slid.png" alt=""></a>
+					<div class="slide_text">
+						<p>
+							Через 1 <br>
+							месяц
+						</p>
+					</div>
+				</div>
+				<a class="prev" onclick="minusSlide()">&#10094;</a>
+    			<a class="next" onclick="plusSlide()">&#10095;</a>
+  			</div>
+  			<script src="script.js"></script>
+		</div>
+		<div class="tipahr">
+			<img src="pictures\line.png" alt="">
+		</div>
+		<div class="pluses">
+			<div class="divan">
+				<img src="pictures\divan.png" alt="">
+				<div class="text">
+					<p>Стилистика музея под каждую выставку.</p>
+				</div>
+			</div>
+			<div class="money">
+				<img src="pictures\money.png" alt="">
+				<div class="text">
+					<p>Отсутствует<br> плата за вход.</p>
+				</div>
+			</div>
+			<div class="block">
+				<img src="pictures\block.png" alt="">
+				<div class="text">
+					<p>Размещение выствавки без ограничений.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer_color">
+		<div class="footer_elem">
+			<div class="soc_web">
+				<img src="pictures\vk1.png" class="vk" alt="">
+				<img src="pictures\inst.png" class="inst" alt="">
+			</div>
+			<div class="info">
+				<p>
+					Наш музей работает круглосуточно. <br>
+					По адресу: <br>
+					г. Крутой, ул. Безымянная, <br>
+					дом 2. <br>
+				</p>
+			</div>
+			<div class="number_mail">
+				<div class="number">
+					<img src="pictures\phone.png" alt="">
+					<p>7-(999)-666-33-33</p>
+				</div>
+				<div class="mail">
+					<img src="pictures\mail.png" alt="">
+					<p>writehere@muse.um</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
